@@ -20,6 +20,7 @@ export const AddPostForm = () => {
   const canSave = [title, content, userId].every(Boolean) && !isLoading
 
   const onSavePostClicked = async () => {
+    
     if (canSave) {
       try {
         await addNewPost({ title, content, user: userId }).unwrap()

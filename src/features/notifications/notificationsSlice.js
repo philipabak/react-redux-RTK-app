@@ -113,6 +113,7 @@ import {
         })
   
         notificationsAdapter.upsertMany(state, notificationsMetadata)
+        
       })
     },
   })
